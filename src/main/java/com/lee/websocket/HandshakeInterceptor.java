@@ -20,7 +20,7 @@ public class HandshakeInterceptor implements org.springframework.web.socket.serv
             String clientName = (String)servletRequest.getServletRequest().getParameter("name");
             System.out.println(clientName);
             
-            HttpSession session = servletRequest.getServletRequest().getSession(false);
+            HttpSession session = servletRequest.getServletRequest().getSession(true);
 //            String userName = "lee";
             if (session != null) {
                 //使用userName区分WebSocketHandler，以便定向发送消息
