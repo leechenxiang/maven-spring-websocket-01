@@ -1,1 +1,16 @@
+
 /target/
+
+/.settings/
+/.classpath
+/.project
+
+/**/.idea/
+*.log
+*.lck
+*.iml
+/**/logs/
+*.epoch
+
+/bin/
+/test-output/
